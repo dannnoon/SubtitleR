@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SubtitleR:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SubtitleR_jar</output-path>
+    <root id="archive" name="SubtitleR.jar">
+      <element id="module-output" name="SubtitleR" />
+    </root>
+  </artifact>
+</component>

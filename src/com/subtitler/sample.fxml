@@ -1,0 +1,33 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox fx:controller="com.subtitler.Controller"
+      xmlns:fx="http://javafx.com/fxml" alignment="TOP_CENTER" spacing="18" style="-fx-padding: 20px">
+
+    <HBox spacing="20" alignment="BASELINE_LEFT">
+        <Label fx:id="fileNameLabel" text="File name:" minWidth="75"/>
+        <Label fx:id="fileNameValue" wrapText="true"/>
+    </HBox>
+    <HBox spacing="20" alignment="BASELINE_LEFT">
+        <Label fx:id="originalTimeLabel" text="Original time:" minWidth="75"/>
+        <Label fx:id="originalTimeValue"/>
+        <Button fx:id="restoreTime" text="Restore"/>
+    </HBox>
+    <HBox spacing="20" alignment="BASELINE_LEFT">
+        <Label fx:id="startTimeLabel" text="Start time:" minWidth="75"/>
+        <HBox spacing="2" alignment="BASELINE_LEFT">
+            <TextField fx:id="hourText" prefWidth="28"/>
+            <Label text="h"/>
+            <TextField fx:id="minuteText" prefWidth="28"/>
+            <Label text="m"/>
+            <TextField fx:id="secondText" prefWidth="28"/>
+            <Label text="s"/>
+            <TextField fx:id="millisecondText" prefWidth="42"/>
+            <Label text="ms"/>
+        </HBox>
+    </HBox>
+    <HBox alignment="BASELINE_LEFT" spacing="20">
+        <Button fx:id="pickFileButton" text="Pick file"/>
+        <Button fx:id="saveFileButton" text="Save file"/>
+        <Label fx:id="doneLabel" text="Done!" textFill="green" visible="false"/>
+    </HBox>
+</VBox>
